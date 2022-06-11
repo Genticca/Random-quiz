@@ -1,0 +1,184 @@
+/* Header */
+#navigator_group {
+    position: relative;
+    padding: 0% 15% 0% 15%;
+}
+
+#logo {
+    display: inline-block;
+    width: 10.94vw;
+    height: 3.27vw;
+    background-image: url(./image/logo.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px) {
+    #logo {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1730px) {
+    #logo {
+        margin-top: 10px;
+    }
+}
+
+#navigator_group > p {
+    float: right;
+    margin-top: 2%;
+}
+
+/* Content */
+.diff_select {
+    display: inline-block;
+    background-color: #dee2e6;
+    width: 18.2vw;
+    height: 25vw;
+    margin: 0vw 0vw 0vw 3.72vw;
+    text-align: center;
+}
+
+.line_ani {
+    position: relative;
+    display: inline-block;
+    width: 18.2vw;
+    height: 25vw;
+    transition: all 0.5s;
+}
+
+
+.select_img {
+    width: 16.2vw;
+    -webkit-user-drag: none;
+}
+
+.line_ani > div > p {
+    margin-top: 5%;
+    margin-bottom: 1vw;
+}
+
+.diff_select > .line_ani > div > img {
+    filter: grayscale(100);
+}
+
+.diff_select:hover > .line_ani > div > img {
+    filter: grayscale(0);
+}
+
+.diff_select > .line_ani > div > span {
+    display: inline-block;
+    font-size: 0.9vw;
+
+}
+
+.diff_select:hover { cursor: pointer; }
+.diff_select:hover .line_ani{ opacity: 1; background: #dcbc56;}
+.diff_select:hover .line_ani::before { width: 88% ;}
+.diff_select:hover .line_ani::after { width: 88% ;}
+.diff_select:hover .line_ani > div::before { height: 92%; }
+.diff_select:hover .line_ani > div::after { height: 92%; }
+.diff_select:hover .line_ani > div > p { color: blue; }
+
+.line_ani::before {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    display: inline-block;
+    transition: all 0.7s;
+    left: 6%;
+    top: 4%;
+    width: 0%;
+    height: 2px; 
+}
+
+.line_ani::after {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    display: inline-block;
+    transition: all 0.7s;
+    left: 6%;
+    top: 95.5%;
+    width: 0%;
+    height: 2px;
+}
+
+.line_ani > div::before {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    display: inline-block;
+    transition: all 0.7s;
+    left: 6%;
+    top: 4%;
+    width: 2px;
+    height: 0%;
+}
+
+.line_ani > div::after {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    display: inline-block;
+    transition: all 0.7s;
+    left: 94%;
+    top: 4%;
+    width: 2px;
+    height: 0%;
+}
+
+#bottom_section > p {
+    font-size: 0.9vw;
+}
+
+.hidden_section {
+    display: none;
+}
+
+.nickname_regs > #content_inner {
+    height: 40vw;
+}
+
+#nickname_regs {
+    text-align: center;
+}
+
+#nickname_regs > p {
+    margin: 1.5vw 0vw 0vw 0vw;
+    font-size: 2vw;
+}
+
+#nickname_regs input {
+    font-size: 2vw;
+    margin: 1vw 0vw 3.5vw 0vw;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+}
+
+.quest_content > #content_inner {
+    height: 32vw;
+}
+
+.quest_section > p {
+    margin-top: 5vw;
+}
+
+.quest_section {
+    font-size: 2vw;
+    margin: 1vw 0vw 3.5vw 0vw;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+}
+
+.quest_section input {
+    font-size: 2vw;
+    margin: 1vw 0vw 3.5vw 0vw;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>BeltHR - 상식 검증시험</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./UserStyle.css">
+    <link rel="stylesheet" href="./main.css">
+
+    <script language="javascript" src="./main.js"></script>
+    <script language="javascript" src="./question.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="./image/logo.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <div id="warp">
+        <div id="header_section">
+            <div id="navigator_group">
+                <div id="logo"></div>
+                <p style="font-size: 0.95vw;">벨트단 상식 검증시험</p>
+            </div>
+        </div>
+        <div id="content_section">
+            <div id="content_inner">
+                <h1 style="text-align: center; margin: 0px; font-size: 2.6vw;">상식 검증시험</h1>
+                <span style="text-align: center; margin: 0px 0px 20px 0px; font-size: 1.2vw; display: block;">- 급수 선택 -</span>
+                <div id="esay" class="diff_select">
+                    <div class="line_ani">
+                        <div>
+                            <img class="select_img" src="./image/easy.png" alt="응애 나이도">
+                            <p style="font-size: 2.6vw;"><b>초급</b></p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="nomal" class="diff_select" style="cursor: default;">
+                    <div class="line_ani">
+                        <div>
+                            <img class="select_img" src="./image/nomal.png" alt="평범 난이도" style="filter: grayscale(100);">
+                            <p style="font-size: 2.6vw;"><b>중급</b></p>
+                            <span>준비 중</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="hard" class="diff_select" style="cursor: default;">
+                    <div class="line_ani">
+                        <div>
+                            <img class="select_img" src="./image/hard.png" alt="지옥 난이도" style="filter: grayscale(100);">
+                            <p style="font-size: 2.6vw;"><b>고급</b></p>
+                            <span>준비 중</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="text-align:center;">정답 작성 후 [ 다음 ] 버튼을 누르면 수정할 수 없습니다. 또한 다시 하시려면 F5를 눌러주십쇼.</p>
+        <div id="bottom_section">
+            <p>제작 : 냐류98 매니저</p>
+            <p>배포 : 2022-06-12</p>
+        </div>
+        <div id="content_section" class="nickname_regs" name="nickname_regs">
+            <div id="content_inner">
+                <h1 style="text-align: center; margin: 0px; font-size: 2.6vw;">시험자 이름 등록</h1>
+                <form id="nickname_regs">
+                    <p>수험자</p>
+                    <input type="text" name="nickname" id="nickname">
+                    <p>급수</p>
+                    <input type="text" name="class" id="class" value="초급" disabled>
+                    <div>
+                        <input type="submit" id="subnickname" value="시작">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script language="javascript">
+        player.setPlayer(config, q)
+    </script>
+</body>
+</html>
